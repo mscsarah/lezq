@@ -7,7 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -24,7 +24,8 @@
                             dark: '#0d2748', 
                             primary: '#1e3a8a', 
                             accent: '#b59410', 
-                            light: '#f1f5f9'
+                            light: '#f1f5f9',
+                            cvbg: '#e8e4d9'
                         }
                     }
                 }
@@ -56,7 +57,6 @@
 
     <header class="bg-white py-4 relative z-20">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            
             <div class="flex items-center gap-5">
                 <img src="site-logo.jpg" alt="شعار البوابة" class="w-20 h-20 md:w-28 md:h-28 object-contain" onerror="this.src='https://upload.wikimedia.org/wikipedia/ar/d/d7/Logo_of_Dijlah_University_College.png'">
                 <div class="text-right mt-1">
@@ -66,9 +66,7 @@
                     <p class="text-sm font-semibold text-univ-dark">بوابة الأستاذة سارة صباح الأكاديمية</p>
                 </div>
             </div>
-
             <div></div>
-            
         </div>
     </header>
 
@@ -100,10 +98,8 @@
     </div>
 
     <section id="hero" class="relative h-[500px] md:h-[600px] w-full overflow-hidden bg-univ-dark">
-        <img src="profile.jpg" alt="الأستاذة سارة صباح" class="absolute inset-0 w-full h-full object-cover object-top" onerror="this.src='https://via.placeholder.com/1920x800?text=يرجى+إضافة+profile.jpg'">
-        
+        <img src="profile.jpg" alt="الأستاذة سارة صباح" class="absolute inset-0 w-full h-full object-cover object-top" onerror="this.src='https://via.placeholder.com/1920x800?text=يرجى+إضافة+صورة+الواجهة.jpg'">
         <div class="absolute inset-0 bg-gradient-to-l from-univ-dark via-univ-dark/70 to-transparent opacity-95"></div>
-
         <div class="absolute inset-0 flex items-center">
             <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full text-right">
                 <div class="max-w-xl">
@@ -113,8 +109,8 @@
                     <p class="text-lg md:text-xl text-gray-200 mb-8 font-medium drop-shadow-md">
                         تطوير المعرفة الهندسية من بغداد إلى العالم
                     </p>
-                    <a href="#publications" class="inline-flex items-center justify-center px-8 py-3 bg-white text-univ-dark font-bold text-lg rounded shadow-xl hover:bg-gray-100 transition">
-                        استكشف الأبحاث
+                    <a href="#about" class="inline-flex items-center justify-center px-8 py-3 bg-white text-univ-dark font-bold text-lg rounded shadow-xl hover:bg-gray-100 transition">
+                        عرض السيرة الذاتية
                     </a>
                 </div>
             </div>
@@ -123,43 +119,29 @@
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 space-y-24">
         
+        <!-- قسم السيرة الذاتية (عن طريق عرض الصورة المرفوعة) -->
         <section id="about">
-            <div class="text-center mb-16">
+            <div class="text-center mb-12">
                 <h3 class="text-3xl font-extrabold text-univ-dark flex items-center justify-center gap-3">
-                    <i class="fas fa-id-card text-univ-accent text-2xl"></i> النبذة الأكاديمية
+                    <i class="fas fa-id-card text-univ-accent text-2xl"></i> السيرة الذاتية والمهنية
                 </h3>
                 <div class="w-24 h-1 bg-univ-accent mx-auto mt-4 rounded-full"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="prose prose-lg text-slate-700">
-                    <h4 class="font-bold text-univ-dark text-xl mb-4">مسيرة علمية وهندسية</h4>
-                    <p>أستاذة في قسم هندسة الليزر والإلكترونيات البصرية بكلية الهندسة - جامعة دجلة. أمتلك شغفاً كبيراً في دمج الجانب النظري بالجانب العملي والتطبيقي لعلوم الفيزياء البصرية.</p>
-                    <p>تتركز اهتماماتي البحثية والتدريسية في مجالات تفاعل الضوء مع المادة، تصميم المنظومات الليزرية، وتطبيقات الإلكترونيات البصرية في التكنولوجيا الحديثة. أهدف دائماً لتخريج مهندسين قادرين على الابتكار في هذا المجال الدقيق.</p>
-                </div>
+            <div class="flex flex-col items-center justify-center">
+                <!-- عرض صورة السيرة الذاتية -->
+                <!-- تم استبدال المسافات برمز %20 لكي يعمل الرابط بدون مشاكل في سيرفرات GitHub -->
+                <img src="WhatsApp%20Image%202026-04-07%20at%204.13.31%20AM.jpeg" alt="السيرة الذاتية" class="w-full max-w-2xl rounded-xl shadow-2xl border border-gray-200" onerror="this.src='https://via.placeholder.com/800x1200?text=يرجى+التأكد+من+اسم+الصورة+في+GitHub'">
                 
-                <div class="relative border-r-2 border-univ-dark/20 pr-8 space-y-10">
-                    <div class="relative">
-                        <div class="absolute -right-[41px] top-1 w-6 h-6 rounded-full bg-univ-accent border-4 border-white shadow-md flex items-center justify-center text-white text-xs">
-                             <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <span class="text-sm font-bold text-univ-accent">الحاضر</span>
-                        <h5 class="font-extrabold text-lg text-univ-dark mt-1">أستاذة جامعية</h5>
-                        <p class="text-sm text-slate-600">جامعة دجلة، كلية الهندسة - قسم هندسة الليزر والإلكترونيات البصرية.</p>
-                    </div>
-                    <div class="relative">
-                        <div class="absolute -right-[41px] top-1 w-6 h-6 rounded-full bg-univ-dark border-4 border-white shadow-md flex items-center justify-center text-white text-xs">
-                             <i class="fas fa-microscope"></i>
-                        </div>
-                        <span class="text-sm font-bold text-univ-accent">باحثة ومستشارة</span>
-                        <h5 class="font-extrabold text-lg text-univ-dark mt-1">البحث العلمي المتقدم</h5>
-                        <p class="text-sm text-slate-600">نشر أبحاث في مجلات علمية رصينة تتعلق بتطبيقات الألياف البصرية والليزر.</p>
-                    </div>
+                <div class="mt-8">
+                    <a href="WhatsApp%20Image%202026-04-07%20at%204.13.31%20AM.jpeg" target="_blank" class="px-8 py-3 bg-univ-dark hover:bg-univ-primary text-white font-bold rounded-full shadow-lg transition flex items-center gap-2">
+                        <i class="fas fa-expand"></i> عرض الصورة بحجم كامل
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- قسم المحاضرات الإلكترونية (الجديد) -->
+        <!-- قسم المحاضرات الإلكترونية -->
         <section id="online-lectures" class="bg-emerald-50 rounded-3xl p-8 md:p-12 border border-emerald-100 shadow-md relative overflow-hidden">
             <div class="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
             <div class="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
@@ -181,6 +163,7 @@
             </div>
         </section>
 
+        <!-- قسم المقررات والملازم -->
         <section id="teaching" class="bg-slate-50 rounded-3xl p-8 md:p-12 border border-gray-100">
             <div class="text-center mb-10">
                 <h3 class="text-3xl font-extrabold text-univ-dark flex items-center justify-center gap-3">
@@ -197,7 +180,6 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Wave Propagation (Interactive) -->
                 <div class="course-card bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden border border-gray-100 flex flex-col">
                     <div class="flex items-center justify-between mb-4 relative z-10">
                         <i class="course-icon fas fa-broadcast-tower text-4xl text-univ-dark transition-all duration-300"></i>
@@ -254,7 +236,7 @@
                     </div>
                     <h4 class="font-extrabold text-xl text-univ-dark mb-2">الفصل الثامن</h4>
                     <p class="text-sm text-slate-600 mb-6 flex-grow" dir="ltr" style="text-align: right;">Magnetic Forces, Materials, and Devices</p>
-                    <a href="Electromagnetics1.pdf" target="_blank" class="w-full py-2.5 bg-gray-50 hover:bg-red-500 hover:text-white text-slate-700 font-bold rounded-lg transition border border-gray-200 flex items-center justify-center gap-2">
+                    <a href="electromagnetics1.pdf.pdf" target="_blank" class="w-full py-2.5 bg-gray-50 hover:bg-red-500 hover:text-white text-slate-700 font-bold rounded-lg transition border border-gray-200 flex items-center justify-center gap-2">
                         <i class="fas fa-eye"></i> عرض الملف (PDF)
                     </a>
                 </div>
@@ -274,6 +256,7 @@
             </div>
         </section>
 
+        <!-- قسم التواصل -->
         <section id="contact" class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start bg-univ-dark rounded-3xl p-10 md:p-16 text-white shadow-2xl relative overflow-hidden">
             <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-white rounded-full opacity-5 blur-3xl"></div>
             
@@ -287,6 +270,10 @@
                     <div class="flex items-center gap-4">
                         <i class="fas fa-map-marker-alt text-xl text-univ-accent w-8 text-center"></i>
                         <span>جامعة دجلة، كلية الهندسة - بغداد، العراق</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-phone-alt text-xl text-univ-accent w-8 text-center"></i>
+                        <span dir="ltr" class="font-medium">07840142847</span>
                     </div>
                     <div class="flex items-center gap-4">
                         <i class="fas fa-envelope text-xl text-univ-accent w-8 text-center"></i>
