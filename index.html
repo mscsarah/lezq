@@ -75,10 +75,9 @@
             <div class="flex justify-center items-stretch h-14 min-w-max">
                 <a href="#hero" class="flex items-center px-6 md:px-8 bg-univ-accent text-white font-bold text-base md:text-lg">الرئيسية</a>
                 <a href="#about" class="flex items-center px-4 md:px-6 text-white hover:bg-white/10 font-medium text-base md:text-lg transition">السيرة الذاتية</a>
-                <a href="#publications" class="flex items-center px-4 md:px-6 text-white hover:bg-white/10 font-medium text-base md:text-lg transition">الأبحاث</a>
-                <a href="#online-lectures" class="flex items-center px-4 md:px-6 text-white hover:bg-white/10 font-medium text-base md:text-lg transition">المحاضرات الإلكترونية</a>
-                <a href="#teaching" class="flex items-center px-4 md:px-6 text-white hover:bg-white/10 font-medium text-base md:text-lg transition">التدريس</a>
-                <a href="#publications" class="flex items-center px-4 md:px-6 text-white hover:bg-white/10 font-medium text-base md:text-lg transition">منشورات</a>
+                <a href="#online-lectures" class="flex items-center px-4 md:px-6 text-white hover:bg-white/10 font-medium text-base md:text-lg transition">المحاضرات (Online)</a>
+                <a href="#teaching" class="flex items-center px-4 md:px-6 text-white hover:bg-white/10 font-medium text-base md:text-lg transition">التدريس والملازم</a>
+                <a href="#quizzes" class="flex items-center px-4 md:px-6 text-white hover:bg-white/10 font-medium text-base md:text-lg transition">الكويزات</a>
                 <a href="#contact" class="flex items-center px-4 md:px-6 text-white hover:bg-white/10 font-medium text-base md:text-lg transition">تواصل</a>
             </div>
         </div>
@@ -90,8 +89,8 @@
                 <i class="fas fa-bullhorn animate-pulse"></i> آخر الأخبار
             </div>
             <div class="flex-1 overflow-hidden relative h-full flex items-center mr-2">
-                <a href="#teaching" class="animate-marquee text-sm font-medium hover:text-univ-dark transition">
-                    ✨ عاجل: تمت اضافة ملزمة (Wave Propagation) ومحاضرات الكورس بالتسلسل في قسم المقررات. يمكن للطلاب تحميلها الآن!
+                <a href="#quizzes" class="animate-marquee text-sm font-medium hover:text-univ-dark transition">
+                    ✨ عاجل: تمت اضافة ملزمة (Wave Propagation) ومحاضرات الكورس، بالإضافة إلى قسم جديد خاص بـ "الكويزات والاختبارات التفاعلية"!
                 </a>
             </div>
         </div>
@@ -119,7 +118,6 @@
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 space-y-24">
         
-        <!-- قسم السيرة الذاتية (عن طريق عرض الصورة المرفوعة) -->
         <section id="about">
             <div class="text-center mb-12">
                 <h3 class="text-3xl font-extrabold text-univ-dark flex items-center justify-center gap-3">
@@ -129,8 +127,6 @@
             </div>
 
             <div class="flex flex-col items-center justify-center">
-                <!-- عرض صورة السيرة الذاتية -->
-                <!-- تم استبدال المسافات برمز %20 لكي يعمل الرابط بدون مشاكل في سيرفرات GitHub -->
                 <img src="WhatsApp%20Image%202026-04-07%20at%204.13.31%20AM.jpeg" alt="السيرة الذاتية" class="w-full max-w-2xl rounded-xl shadow-2xl border border-gray-200" onerror="this.src='https://via.placeholder.com/800x1200?text=يرجى+التأكد+من+اسم+الصورة+في+GitHub'">
                 
                 <div class="mt-8">
@@ -141,7 +137,6 @@
             </div>
         </section>
 
-        <!-- قسم المحاضرات الإلكترونية -->
         <section id="online-lectures" class="bg-emerald-50 rounded-3xl p-8 md:p-12 border border-emerald-100 shadow-md relative overflow-hidden">
             <div class="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
             <div class="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
@@ -163,7 +158,6 @@
             </div>
         </section>
 
-        <!-- قسم المقررات والملازم -->
         <section id="teaching" class="bg-slate-50 rounded-3xl p-8 md:p-12 border border-gray-100">
             <div class="text-center mb-10">
                 <h3 class="text-3xl font-extrabold text-univ-dark flex items-center justify-center gap-3">
@@ -182,14 +176,14 @@
                 
                 <div class="course-card bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden border border-gray-100 flex flex-col">
                     <div class="flex items-center justify-between mb-4 relative z-10">
-                        <i class="course-icon fas fa-broadcast-tower text-4xl text-univ-dark transition-all duration-300"></i>
-                        <span class="text-xs font-bold text-white bg-red-600 px-3 py-1 rounded-full animate-pulse shadow-md">بنك أسئلة تفاعلي</span>
+                        <i class="course-icon fas fa-book-reader text-4xl text-univ-dark transition-all duration-300"></i>
+                        <span class="text-xs font-bold text-white bg-blue-600 px-3 py-1 rounded-full shadow-md">للمراجعة</span>
                     </div>
                     <h4 class="font-extrabold text-xl text-univ-dark mb-1" dir="ltr" style="text-align: right;">Wave Propagation</h4>
-                    <h5 class="font-bold text-md text-univ-accent mb-3">انتشار الموجات</h5>
-                    <p class="text-sm text-slate-600 mb-6 flex-grow">يحتوي على بنك الأسئلة الشامل (100 سؤال) يشمل خيارات متعددة، أسئلة شرح، ومسائل رياضية.</p>
+                    <h5 class="font-bold text-md text-univ-accent mb-3">بنك الأسئلة الشامل</h5>
+                    <p class="text-sm text-slate-600 mb-6 flex-grow">يحتوي على بنك الأسئلة الشامل للتدريب والمراجعة قبل الامتحان.</p>
                     <a href="wave_propagation_bank.html" target="_blank" class="w-full py-2.5 bg-univ-dark hover:bg-univ-accent text-white font-bold rounded-lg transition shadow-md flex items-center justify-center gap-2">
-                        <i class="fas fa-laptop-code text-blue-400 transition-colors text-lg"></i> فتح برنامج الأسئلة
+                        <i class="fas fa-book-open text-blue-400 transition-colors text-lg"></i> افتح بنك الأسئلة
                     </a>
                 </div>
 
@@ -256,7 +250,63 @@
             </div>
         </section>
 
-        <!-- قسم التواصل -->
+        <section id="quizzes" class="bg-blue-50 rounded-3xl p-8 md:p-12 border border-blue-100 relative overflow-hidden shadow-inner">
+            <div class="text-center mb-12 relative z-10">
+                <h3 class="text-3xl font-extrabold text-univ-dark flex items-center justify-center gap-3">
+                    <i class="fas fa-clipboard-list text-blue-600 text-2xl"></i> الكويزات والاختبارات التفاعلية
+                </h3>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-slate-600 font-medium text-lg">اختبر معلوماتك وقيم مستواك في المقررات الدراسية</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+                
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-blue-200 flex flex-col group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-full h-1 bg-blue-600"></div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center group-hover:bg-blue-600 transition-colors duration-300">
+                            <i class="fas fa-question-circle text-2xl text-blue-600 group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <span class="text-xs font-bold text-white bg-red-500 px-3 py-1 rounded-full shadow-sm animate-pulse">امتحان تفاعلي</span>
+                    </div>
+                    <h4 class="font-extrabold text-xl text-univ-dark mb-2">الامتحان الشامل: Wave Propagation</h4>
+                    <p class="text-sm text-slate-600 mb-8 flex-grow">يطلب تسجيل الاسم، يحتوي على 60 سؤال خيارات متعددة (MCQ) مع إرسال النتيجة مباشرة للأستاذة.</p>
+                    <a href="wave_propagation_bank.html" target="_blank" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition flex items-center justify-center gap-2 shadow-md">
+                        <i class="fas fa-play"></i> ابدأ الاختبار الآن
+                    </a>
+                </div>
+
+                <div class="bg-slate-50 rounded-2xl p-8 border border-gray-200 flex flex-col opacity-80">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
+                            <i class="fas fa-lock text-2xl text-gray-500"></i>
+                        </div>
+                        <span class="text-xs font-bold text-gray-600 bg-gray-200 px-3 py-1 rounded-full border border-gray-300">قريباً</span>
+                    </div>
+                    <h4 class="font-extrabold text-xl text-gray-500 mb-2">كويز: الفصل الثامن</h4>
+                    <p class="text-sm text-slate-500 mb-8 flex-grow">سيتم إتاحة الاختبار بعد إكمال المحاضرات الخاصة بالقوى المغناطيسية.</p>
+                    <button disabled class="w-full py-3 bg-gray-200 text-gray-500 font-bold rounded-xl transition flex items-center justify-center gap-2 cursor-not-allowed border border-gray-300">
+                        <i class="fas fa-lock"></i> مغلق حالياً
+                    </button>
+                </div>
+                
+                <div class="bg-slate-50 rounded-2xl p-8 border border-gray-200 flex flex-col opacity-80">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
+                            <i class="fas fa-lock text-2xl text-gray-500"></i>
+                        </div>
+                        <span class="text-xs font-bold text-gray-600 bg-gray-200 px-3 py-1 rounded-full border border-gray-300">قريباً</span>
+                    </div>
+                    <h4 class="font-extrabold text-xl text-gray-500 mb-2">كويز: مسائل رياضية</h4>
+                    <p class="text-sm text-slate-500 mb-8 flex-grow">اختبار مخصص لحل المسائل والقوانين الرياضية (المحاضرات 1-5).</p>
+                    <button disabled class="w-full py-3 bg-gray-200 text-gray-500 font-bold rounded-xl transition flex items-center justify-center gap-2 cursor-not-allowed border border-gray-300">
+                        <i class="fas fa-lock"></i> مغلق حالياً
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
         <section id="contact" class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start bg-univ-dark rounded-3xl p-10 md:p-16 text-white shadow-2xl relative overflow-hidden">
             <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-white rounded-full opacity-5 blur-3xl"></div>
             
